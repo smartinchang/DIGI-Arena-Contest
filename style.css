@@ -1,0 +1,217 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("/resources/fonts/Quicksand.ttf");
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("/resources/fonts/Roboto-Regular.ttf");
+}
+
+.fade {
+	opacity: 1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("images/tet.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 35px;
+	color: #FFFFFF;
+}
+
+h2 {
+	color: #6E1315;
+	font-size: 26px;
+	text-align: left;
+}
+
+h3 {
+	color: #3d3d3b;
+	font-family: "Roboto";
+	font-size: 22px;
+}
+
+p {
+	font-family: "Roboto";
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: left;
+	color: #3d3d3b;
+}
+
+.container {
+	width: 670px;
+	margin:auto;
+}
+
+.infographic {
+	width: 470px;
+	height: auto;
+	background-color: #FAB42C;  
+	text-align: center;
+	font-family: 'Quicksand';
+	margin-top: 30px;
+	margin-bottom: 30px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+	float: left;
+}
+
+button {
+	background-color: #FAB42C;
+	height: auto;
+	border-radius: 30px;
+	font-size: 20px;
+	color: #EEEEEE;
+	border: none;
+	padding: 10px 15px;
+	margin: 5px 18px;
+	transition-duration: 0.3s;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #AD110C;
+	transform: scale(1.05);
+}
+
+button:focus {
+	outline: none;
+}
+
+#leftbtn {
+	display:none;
+}
+
+#left {
+	text-align: center;
+	width: 100px;
+	height: auto;
+	float: left;
+	margin-top: 4%;
+}
+
+#right {
+	text-align: center;
+	 width: 100px;
+	height: auto;
+	float: right;
+	margin-top: 4%;
+}
+
+.header {
+	background-color: #AD110C;  
+	padding: 10px;
+}
+
+.wrapper {
+	padding: 30px;
+}
+
+.wrapper img {
+	width: 100%;
+}
+
+.column-left, .column-right {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.column-left {
+	width: 35%;
+}
+
+.column-right {
+	width: 60%;
+	padding-left: 14px;
+}
+
+.info {
+	padding: 18px;
+	background-color: #E87637;
+	text-align: center;
+}
+
+.info h2 {
+	position: relative;
+	text-align: left;
+	font-size: 46px;
+	color: #Fff4dd;
+}
+
+.info p {
+	text-align: center;
+	color: #6E1315;
+}
+
+.info img {
+	width: 200px;
+	margin: 30px;
+}
+
+li {
+	list-style-position: inside;
+	font-family: "Roboto";
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: left;
+	color: #3d3d3b;
+	text-align: center;
+}
+   
+@keyframes bounce-7 {
+	0%   { transform: scale(1,1)      translateY(0); }
+	10%  { transform: scale(1.1,.9)   translateY(0); }
+	30%  { transform: scale(.9,1.1)   translateY(-100px); }
+	50%  { transform: scale(1.05,.95) translateY(0);
+				 transform: scaleX(-1);}
+	57%  { transform: scale(1,1)      translateY(-7px); }
+	64%  { transform: scale(1,1)      translateY(0); }
+		100% { transform: scale(1,1)      translateY(0); }
+}
+
+.bounce {
+	animation-name: bounce-7;
+	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.wiggle {
+     animation: wiggle 2s linear infinite;
+}
